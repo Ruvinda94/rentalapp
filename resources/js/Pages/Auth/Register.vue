@@ -18,6 +18,20 @@
             </div>
 
             <div class="mt-4">
+            <span class="text-gray-700">Account Type</span>
+            <div class="mt-2">
+                <label class="inline-flex items-center">
+                <input type="radio" class="form-radio" name="is_admin" value="1" v-model="form.is_admin" required>
+                <span class="ml-2">Landlord</span>
+                </label>
+                <label class="inline-flex items-center ml-6">
+                <input type="radio" class="form-radio" name="is_admin" value="0" v-model="form.is_admin" required>
+                <span class="ml-2">Client</span>
+                </label>
+            </div>
+            </div>
+
+            <div class="mt-4">
                 <jet-label for="password" value="Password" />
                 <jet-input id="password" type="password" class="mt-1 block w-full" v-model="form.password" required autocomplete="new-password" />
             </div>
@@ -79,6 +93,7 @@
                     email: '',
                     password: '',
                     password_confirmation: '',
+                    is_admin: '',
                     terms: false,
                 })
             }
