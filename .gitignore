@@ -1,0 +1,6 @@
+node_modules/
+.vscode
+composer.phar
+.env
+storage/uploads
+public/
